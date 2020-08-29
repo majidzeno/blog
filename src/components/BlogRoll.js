@@ -25,17 +25,17 @@ class BlogRoll extends React.Component {
 							// 	post.frontmatter.featuredpost ? "is-featured" : ""
 							// }`}
 							>
-								<Header>
+								{/* <Header>
 									{post.frontmatter.featuredimage ? (
 										<Article.Thumbnail
 										//  className="featured-thumbnail"
 										>
-											{/* <PreviewCompatibleImage
+											<PreviewCompatibleImage
 												imageInfo={{
 													image: post.frontmatter.featuredimage,
 													alt: `featured image thumbnail for post ${post.frontmatter.title}`,
 												}}
-											/> */}
+											/>
 
 											<StyledBackgroundSection
 												Tag="section"
@@ -45,7 +45,7 @@ class BlogRoll extends React.Component {
 												backgroundColor={`#040e18`}></StyledBackgroundSection>
 										</Article.Thumbnail>
 									) : null}
-								</Header>
+								</Header> */}
 								<PostWrapper>
 									<p
 									// className="post-meta"
@@ -137,8 +137,8 @@ const Article = styled.article`
 	box-shadow: -6px -2px 16px rgb(220 225 239 / 80%),
 		6px 2px 16px rgb(205 205 205 / 48%);
 	height: 100%;
-	min-height: 206px;
-	max-height: 260px;
+	/* min-height: 206px; */
+	/* max-height: 260px; */
 	/* &:after {
 		background: linear-gradient(180deg, #e6e6e6 0, #e6e6e6 48%, #fff);
 		position: absolute;
@@ -174,6 +174,8 @@ const Title = styled(Link)`
 
 const Thumbnail = styled.div`
 	width: 25vw;
+	width: 19em;
+
 	> div {
 		border-radius: 0 !important;
 	}

@@ -67,6 +67,8 @@ const LayoutContainer = styled.div`
 
 	/* align-items: center; */
 	justify-content: center;
+	max-width: 84em;
+	margin: 0 auto;
 `;
 
 const MainContainer = styled.main`
